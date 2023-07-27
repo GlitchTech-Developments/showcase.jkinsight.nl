@@ -6,6 +6,7 @@ import compress from "astro-compress";
 
 import tailwind from "@astrojs/tailwind";
 
+import storyblok from "@storyblok/astro";
 import codeblocks from "@thewebforge/astro-code-blocks";
 
 const env = loadEnv("", process.cwd(), "STORYBLOK");
@@ -22,9 +23,13 @@ export default defineConfig({
 		storyblok({
 			accessToken: env.STORYBLOK_TOKEN,
 			bridge: true,
-			apiOptions: {}, // storyblok-js-client options
-			components: {},
-			componentsDir: "src/",
+			apiOptions: {
+				region: "eu",
+			}, // storyblok-js-client options
+			components: {
+				blogPost: "/blog/BlogPost",
+			},
+			componentsDir: "src/storyblok",
 			enableFallbackComponent: false,
 		}),
 		codeblocks({

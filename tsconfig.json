@@ -1,3 +1,16 @@
 {
-  "extends": "astro/tsconfigs/strict"
+	"extends": "astro/tsconfigs/base",
+	"compilerOptions": {
+		"verbatimModuleSyntax": true,
+		"baseUrl": ".",
+		"paths": {
+			"@layout/*": ["src/layout/*"],
+			"@storyblok/*": ["src/storyblok/*"]
+		},
+		"plugins": [
+			{
+				"name": "@astrojs/ts-plugin"
+			}
+		]
+	}
 }

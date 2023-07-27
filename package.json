@@ -1,35 +1,41 @@
 {
-  "name": "showcase.jkinsight.nl",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "prettier:write": "prettier --write ./**/*.{js,cjs,ts,tsx,astro}",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/tailwind": "^4.0.0",
-    "@thewebforge/astro-code-blocks": "^0.2.0",
-    "@storyblok/astro": "^2.5.4",
-    "astro": "^2.9.2",
-    "astro-compress": "^1.1.49",
-    "astro-preload": "^1.1.2",
-    "vite": "^4.4.7"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "cssnano": "^6.0.1",
-    "postcss": "^8.4.27",
-    "prettier": "^3.0.0",
-    "prettier-plugin-astro": "^0.11.0",
-    "prettier-plugin-tailwindcss": "^0.4.1",
-    "sharp": "^0.32.4",
-    "tailwindcss": "^3.3.3"
-  },
-  "volta": {
-    "node": "18.17.0"
-  }
+	"name": "showcase.jkinsight.nl",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"prettier:write": "prettier --write ./**/*.{js,cjs,ts,tsx,astro}",
+		"storyblok:editor": "node ./.storyblok/sb-editor-server.cjs",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/tailwind": "^4.0.0",
+		"@astrojs/ts-plugin": "^1.1.1",
+		"@storyblok/astro": "^2.5.4",
+		"@storyblok/js": "^2.2.3",
+		"@thewebforge/astro-code-blocks": "^0.2.0",
+		"astro": "^2.9.2",
+		"astro-compress": "^1.1.49",
+		"astro-preload": "^1.1.2",
+		"vite": "^4.4.7"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.14",
+		"cssnano": "^6.0.1",
+		"finalhandler": "^1.2.0",
+		"postcss": "^8.4.27",
+		"prettier": "^3.0.0",
+		"prettier-plugin-astro": "^0.11.0",
+		"prettier-plugin-tailwindcss": "^0.4.1",
+		"serve-static": "^1.15.0",
+		"sharp": "^0.32.4",
+		"tailwindcss": "^3.3.3",
+		"typescript": "^5.1.6"
+	},
+	"volta": {
+		"node": "18.17.0"
+	}
 }
