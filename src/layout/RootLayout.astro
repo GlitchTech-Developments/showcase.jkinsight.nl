@@ -1,0 +1,24 @@
+---
+import { projectConfig } from "../../config/project";
+
+const { title } = Astro.props;
+
+const PageTitle = `${
+	title ? title + ` | ${projectConfig.defaults.Title}` : projectConfig.defaults.Title
+}`;
+const PageDesc = projectConfig.defaults.Desc ?? "";
+---
+
+<html lang="en">
+	<head>
+		<title>{PageTitle}</title>
+		<meta name="description" content={PageDesc} />
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>

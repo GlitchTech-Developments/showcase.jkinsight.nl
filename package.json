@@ -7,9 +7,29 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "prettier:write": "prettier --write ./**/*.{js,cjs,ts,tsx,astro}",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.9.2"
+    "@astrojs/tailwind": "^4.0.0",
+    "@thewebforge/astro-code-blocks": "^0.2.0",
+    "@storyblok/astro": "^2.5.4",
+    "astro": "^2.9.2",
+    "astro-compress": "^1.1.49",
+    "astro-preload": "^1.1.2",
+    "vite": "^4.4.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.27",
+    "prettier": "^3.0.0",
+    "prettier-plugin-astro": "^0.11.0",
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "sharp": "^0.32.4",
+    "tailwindcss": "^3.3.3"
+  },
+  "volta": {
+    "node": "18.17.0"
   }
 }

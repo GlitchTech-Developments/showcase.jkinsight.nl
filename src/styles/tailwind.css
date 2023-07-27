@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--astro-code-color-text: white;
+	--astro-code-color-background: black;
+	--astro-code-token-constant: plum;
+	--astro-code-token-string: purple;
+	--astro-code-token-comment: tomato;
+	--astro-code-token-keyword: darkslategrey;
+	--astro-code-token-parameter: coral;
+	--astro-code-token-function: green;
+	--astro-code-token-string-expression: chartreuse;
+	--astro-code-token-punctuation: gray;
+	--astro-code-token-link: firebrick;
+}
